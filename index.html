@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/myprofile/assets/css/style.css">
+    <link rel="stylesheet" href="/myprofile/assets/font/fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<body>
+    <div class="ground">
+        <p class="sub">Welcome to profile Van Viet JR</p>
+        <button class="btn-auto js-buy-ticket">Click me</button>
+    </div>
+    <div class="dialog">
+        <div class="video-play" id="all">
+            <video id="video_background" preload="auto" autoplay="true" loop="loop" muted volume="0">
+                <source src="/myprofile/assets/video/chill.mp4" type="video/mp4"/>
+                
+                <source src="/myprofile/assets/video/chill.mp4" type="video/webm"/>
+
+                <source src="/myprofile/assets/video/chill.mp4" type="video/ogg ogv"; codecs="theora, vorbis"/>
+            </video>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img src="/myprofile/assets/img/vv.jpg" alt="">
+            </div>
+            <h2>Văn Viết JR</h2>
+            <p>Boy of Freedom</p>
+            <div class="social">
+                <a href="https://www.facebook.com/vanviet.ho.7528">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.tiktok.com/@vanvietjr10">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com/vanviet.jr_10/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-github-alt"></i>
+                </a>
+            </div>
+            <button class="contact">Contact Me</button>
+        </div>
+    </div>
+    <script>
+        const buyBtns = document.querySelector('.js-buy-ticket')
+        const modal = document.querySelector('.dialog')
+        function showBuyTicket() {
+            modal.classList.add('open')
+        }
+        buyBtns.addEventListener('click', showBuyTicket)
+    </script>
+</body>
+</html>
